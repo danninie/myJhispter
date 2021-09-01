@@ -113,7 +113,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "164435c41dd193ea3572";
+/******/ 	var hotCurrentHash = "814c3c5b94939041ce89";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -989,7 +989,7 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push([1,"vendors"]);
+/******/ 	deferredModules.push([0,"vendors"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -1372,39 +1372,6 @@ webpackContext.keys = function webpackContextKeys() {
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
 webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
-
-/***/ }),
-
-/***/ "./node_modules/webpack/hot sync ^\\.\\/log$":
-/*!*************************************************!*\
-  !*** (webpack)/hot sync nonrecursive ^\.\/log$ ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var map = {
-	"./log": "./node_modules/webpack/hot/log.js"
-};
-
-
-function webpackContext(req) {
-	var id = webpackContextResolve(req);
-	return __webpack_require__(id);
-}
-function webpackContextResolve(req) {
-	if(!__webpack_require__.o(map, req)) {
-		var e = new Error("Cannot find module '" + req + "'");
-		e.code = 'MODULE_NOT_FOUND';
-		throw e;
-	}
-	return map[req];
-}
-webpackContext.keys = function webpackContextKeys() {
-	return Object.keys(map);
-};
-webpackContext.resolve = webpackContextResolve;
-module.exports = webpackContext;
-webpackContext.id = "./node_modules/webpack/hot sync ^\\.\\/log$";
 
 /***/ }),
 
@@ -6369,7 +6336,7 @@ const initialState = {
 });
 const setLocale = locale => (dispatch) => Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(void 0, void 0, void 0, function* () {
     if (!Object.keys(react_jhipster__WEBPACK_IMPORTED_MODULE_2__["TranslatorContext"].context.translations).includes(locale)) {
-        const response = yield axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(`i18n/${locale}.json?buildTimestamp=${'1630447508907'}`, { baseURL: '' });
+        const response = yield axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(`i18n/${locale}.json?buildTimestamp=${'1630463363445'}`, { baseURL: '' });
         react_jhipster__WEBPACK_IMPORTED_MODULE_2__["TranslatorContext"].registerTranslations(locale, response.data);
     }
     dispatch({
@@ -6471,21 +6438,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 1:
-/*!***********************************************************************************************************************!*\
-  !*** multi (webpack)-dev-server/client?http://localhost:9061 (webpack)/hot/dev-server.js ./src/main/webapp/app/index ***!
-  \***********************************************************************************************************************/
+/***/ 0:
+/*!*****************************************!*\
+  !*** multi ./src/main/webapp/app/index ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! F:\work\tuo\2021\mytry\DeployToGithub\MyJhispter\node_modules\webpack-dev-server\client\index.js?http://localhost:9061 */"./node_modules/webpack-dev-server/client/index.js?http://localhost:9061");
-__webpack_require__(/*! F:\work\tuo\2021\mytry\DeployToGithub\MyJhispter\node_modules\webpack\hot\dev-server.js */"./node_modules/webpack/hot/dev-server.js");
 module.exports = __webpack_require__(/*! ./src/main/webapp/app/index */"./src/main/webapp/app/index.tsx");
 
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!*********************************!*\
   !*** readable-stream (ignored) ***!
   \*********************************/
@@ -6496,7 +6461,7 @@ module.exports = __webpack_require__(/*! ./src/main/webapp/app/index */"./src/ma
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!********************************!*\
   !*** supports-color (ignored) ***!
   \********************************/
@@ -6507,7 +6472,7 @@ module.exports = __webpack_require__(/*! ./src/main/webapp/app/index */"./src/ma
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!***********************!*\
   !*** chalk (ignored) ***!
   \***********************/
@@ -6518,7 +6483,7 @@ module.exports = __webpack_require__(/*! ./src/main/webapp/app/index */"./src/ma
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!********************!*\
   !*** fs (ignored) ***!
   \********************/
